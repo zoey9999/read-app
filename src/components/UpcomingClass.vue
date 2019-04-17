@@ -36,7 +36,7 @@ export default {
 .upcoming-all {
   width: 96%;
   height: 190px;
-  margin: 15px auto;
+  margin: 20px auto;
   .upcoming-title {
     font-size: 14px;
     margin: 10px 0;
@@ -47,7 +47,7 @@ export default {
   }
   .upcoming-footer {
     font-size: 10px;
-    margin-top: 15px;
+    margin: 12px 0;
     color: rgb(102, 101, 101);
     display: flex;
     .footer-left {

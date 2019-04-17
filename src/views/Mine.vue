@@ -81,6 +81,8 @@ export default {
   .nav-my {
     display: inline-block;
     line-height: 40px;
+    font-size: 1rem;
+    color: black;
   }
   .nav-top-right {
     position: absolute;
@@ -89,13 +91,13 @@ export default {
     margin: 10px 10px;
     .nav-top-set {
       color: rgb(94, 93, 93);
-      font-size: 14px;
+      font-size: 0.8rem;
     }
   }
   .mine-user {
     width: 100%;
     height: 50px;
-    margin-top: 110px;
+    margin-top: 30%;
     display: flex;
     .userimg {
       flex: 0 0 68px;
@@ -105,6 +107,7 @@ export default {
     }
     .user-name {
       line-height: 50px;
+      font-size: 0.95rem;
     }
   }
 }
@@ -134,6 +137,7 @@ export default {
     text-align: center;
     .study-text{
         margin-top: 15px;
+        font-size: 14px;
     }
     .book-img{
         margin-top: 8px;

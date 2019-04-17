@@ -4,44 +4,21 @@
       <img :src="backBtn" @click="backTo" class="nav-img">
       <div class="nav-class">李里课堂</div>
     </div>
-    <!-- <div class="second-nav">
-      <router-link to="/detailliclass" tag="div" class="nav-item">
-        <div class="text">全部</div>
-      </router-link>
-      <router-link to="/guostudy" tag="div" class="nav-item">
-        <div class="text">国学精义</div>
-      </router-link>
-      <router-link to="/meeting" tag="div" class="nav-item">
-        <div class="text">十三经</div>
-      </router-link>
-      <router-link to="/database" tag="div" class="nav-item">
-        <div class="text">三字经</div>
-      </router-link>
-      <router-link to="/mine" tag="div" class="nav-item">
-        <div class="text">精讲儒释道</div>
-      </router-link>
-    </div>
-    <router-view/> -->
     <div class="second-nav">
       <div class="nav-item" @click.prevent="comName='DetailLiClass'">
         <div class="nav-item-text" :class="comName=='DetailLiClass'? 'titlered' :''">全部</div>
-        <div class="nav-item-red" v-show="comName=='DetailLiClass'"></div>
       </div>
       <div class="nav-item" @click.prevent="comName='GuoStudy'">
         <div class="nav-item-text"  :class="comName=='GuoStudy'? 'titlered' :''">国学精义</div>
-        <div class="nav-item-red" v-show="comName=='GuoStudy'"></div>
       </div>
-      <div class="nav-item" @click.prevent="comName='DetailLiClass'">
-        <div class="nav-item-text"  :class="comName=='DetailLiClass'? 'titlered' :''">十三经</div>
-        <div class="nav-item-red" v-show="comName=='DetailLiClass'"></div>
+      <div class="nav-item" @click.prevent="comName='ThirteenClassics'">
+        <div class="nav-item-text"  :class="comName=='ThirteenClassics'? 'titlered' :''">十三经</div>
       </div>
-      <div class="nav-item" @click.prevent="comName='DetailLiClass'">
-        <div class="nav-item-text"  :class="comName=='DetailLiClass'? 'titlered' :''">三字经</div>
-        <div class="nav-item-red" v-show="comName=='DetailLiClass'"></div>
+      <div class="nav-item" @click.prevent="comName='ThreeCharacter'">
+        <div class="nav-item-text"  :class="comName=='ThreeCharacter'? 'titlered' :''">三字经</div>
       </div>
-      <div class="nav-item" @click.prevent="comName='DetailLiClass'">
-        <div class="nav-item-text"  :class="comName=='DetailLiClass'? 'titlered' :''">精讲儒释道</div>
-        <div class="nav-item-red" v-show="comName=='DetailLiClass'"></div>
+      <div class="nav-item" @click.prevent="comName='Confucianism'">
+        <div class="nav-item-text"  :class="comName=='Confucianism'? 'titlered' :''">精讲儒释道</div>
       </div>
     </div>
     <component :is="comName"></component>
@@ -51,6 +28,9 @@
 <script>
 import DetailLiClass from "../components/DetailLiClass.vue";
 import GuoStudy from "../components/GuoStudy.vue";
+import ThirteenClassics from "../components/ThirteenClassics.vue";
+import ThreeCharacter from "../components/ThreeCharacter.vue";
+import Confucianism from "../components/Confucianism.vue";
 export default {
   name: "liclass",
   data() {
@@ -66,12 +46,19 @@ export default {
   },
   components: {
     DetailLiClass,
-    GuoStudy
+    GuoStudy,
+    ThirteenClassics,
+    ThreeCharacter,
+    Confucianism
   }
 };
 </script>
 
 <style lang="scss" scoped>
+.liclass{
+  width: 94%;
+  margin: 10px auto;
+}
 .nav {
   width: 100%;
   height: 40px;
@@ -82,7 +69,7 @@ export default {
     flex: 0 0 10px;
   }
   .nav-class {
-    width: 100%;
+    width: 90%;
     line-height: 40px;
     text-align: center;
   }
@@ -90,12 +77,12 @@ export default {
 .second-nav {
   width: 90%;
   height: 30px;
-  line-height: 30px;
-  margin: 0 auto;
+  line-height: 20px;
+  margin: 13px auto 0 auto;
   .nav-item{
     height: 30px;
     display: inline-block;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     margin: 0 5px;
     color: rgb(74, 75, 75);
   }

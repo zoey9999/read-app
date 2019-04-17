@@ -26,19 +26,6 @@ export default new Router({
       path: '/home/liclass',
       name: 'liclass',
       component: () => import('../home/LiClass.vue')
-      // redirect: '/detailliclass',
-      // children: [
-      //   {
-      //     path: '/detailliclass',
-      //     name: 'detailliclass',
-      //     component: () => import('../home/views/DetailLiClass.vue')
-      //   },
-      //   {
-      //     path: '/guostudy',
-      //     name: 'guostudy',
-      //     component: () => import('../home/views/GuoStudy.vue')
-      //   }
-      // ]
     },
     {
       path: '/home/systemclass',

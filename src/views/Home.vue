@@ -115,8 +115,8 @@ export default {
 }
 
 .img-red {
-  width: 17px;
-  height: 5px;
+  width: 13px;
+  height: 3px;
   background-color: red;
   border-radius: 20px;
   margin: 15px auto;
@@ -159,7 +159,7 @@ export default {
     height: 250px;
     margin-top: 30px;
     .study-title {
-      margin: 15px 0;
+      margin: 12px 0;
       color: rgb(88, 87, 87);
       font-size: 14px;
     }
@@ -167,7 +167,7 @@ export default {
       width: 100%;
       height: 28px;
       display: flex;
-      font-size: 12px;
+      font-size: 11px;
       vertical-align: top;
       color: rgb(88, 87, 87);
     }
@@ -207,14 +207,13 @@ export default {
     height: 45px;
     .study-pre {
       width: 3px;
-      height: 20px;
+      height: 18px;
       background-color: red;
       display: inline-block;
       margin-top: 3px;
     }
     .study {
       display: inline-block;
-      font-size: 17px;
       vertical-align: top;
       margin: 0 10px;
     }

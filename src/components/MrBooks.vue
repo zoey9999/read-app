@@ -22,7 +22,7 @@
         <img :src="mrbooks" width="100%">
       </div>
       <div class="mrbooks-item-right">
-        <div class="mrbooks-item-title">清代焦秉贞绘《王阳明像》</div>
+        <div class="mrbooks-item-title">清代焦秉贞绘《王阳明像》清代焦秉贞绘《王阳明像》</div>
         <div class="mrbooks-item-text">王守仁出身于浙江余姚显赫的家庭</div>
         <div class="mrbooks-item-footer">
           <div class="mrbooks-item-author">作者： 王阳明</div>
@@ -82,6 +82,19 @@ export default {
       width: 100%;
       margin-left: 8px;
     }
+    .mrbooks-item-title {
+      font-size: 0.9rem;
+      height: 20px;
+      text-overflow: -o-ellipsis-lastline;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      line-clamp: 1;
+      /*! autoprefixer: off */
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on */
+    }
     .mrbooks-item-text {
       width: 100%;
       height: 36px;
@@ -94,14 +107,16 @@ export default {
       display: -webkit-box;
       -webkit-line-clamp: 2;
       line-clamp: 2;
+      /*! autoprefixer: off */
       -webkit-box-orient: vertical;
+      /* autoprefixer: on */
     }
     .mrbooks-item-footer {
       width: 100%;
       height: 20px;
       display: flex;
       font-size: 12px;
-      margin-top: 8px;
+      margin-top: 4px;
     }
     .mrbooks-item-author {
       flex: 0 0 68%;

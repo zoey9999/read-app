@@ -54,10 +54,10 @@ export default {
     margin: 0 auto;
     text-align: center;
     line-height: 40px;
-    font-size: 13px;
+    font-size: 0.93rem;
   }
   .nav-item-red {
-    width: 60%;
+    width: 49%;
     height: 2px;
     margin: 0 auto;
     background-color: red;

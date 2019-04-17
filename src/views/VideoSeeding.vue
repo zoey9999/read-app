@@ -12,7 +12,7 @@
 
       <div class="zhibo-item">
         <div class="zhibo-img">
-          <img :src="zhibo1" width="100%" height="100%">
+          <img :src="zhibo1" width="100%">
         </div>
         <div>
           <div class="zhibo-title">从天气项目入手Spring Cloud 微服务治理</div>
@@ -22,7 +22,7 @@
       </div>
       <div class="zhibo-item">
         <div class="zhibo-img">
-          <img :src="zhibo2" width="100%" height="100%">
+          <img :src="zhibo2" width="100%">
         </div>
         <div>
           <div class="zhibo-title">从天气项目入手Spring Cloud 微服务治理</div>
@@ -65,14 +65,15 @@ export default {
     margin: 20px 10px;
     .study-pre {
       width: 3px;
-      height: 25px;
+      height: 20px;
       background-color: red;
       display: inline-block;
     }
     .study {
       display: inline-block;
-      font-size: 16px;
+      font-size: 0.93rem;
       vertical-align: top;
+      margin-left: 8px;
     }
   }
 }
